@@ -10,7 +10,7 @@ from plotly.graph_objs import Scatter
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8424276c875d016a'
 client = MongoClient("mongodb://newuser:hello123@ds227865.mlab.com:27865/new_database")
-db = client['online_attendence']
+db = client['new_database']
 
 time = datetime.date.today()
 tname = ''
